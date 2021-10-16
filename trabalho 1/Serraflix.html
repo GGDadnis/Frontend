@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR" nome="Serraflix 2.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compartilhamento de videos que não é do Paulo Coelho">
+    <meta name="keywords" content="não a pirataria, compartilhamento social, filmes, serraflix">
+    <title>Serraflix 2.0</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+    <h1>Cadastrar filmes</h1>
+
+    <form action="" method="get">
+      <div>
+        <label for="input-texto">Digite o título do filme:</label>
+        <input type="text" id="input-texto" placeholder="Matrix"/>
+      </div>
+
+      <div>
+        <label for="quantity">Digite o ano de lançamento do filme:</label>
+        <input type="number" id="quantity" placeholder="1999"  min="1895" max="2021"/>
+      </div>
+
+      <div>
+        <label for="input-texto">Insira a sinopse do filme:</label>
+        <input type="text" id="input-texto" placeholder="Tem o Keanu Reeves"/>
+      </div>
+
+      <div>
+        <label for="capa">Insira a capa do filme:</label>
+        <input type="file" id="capa" accept=".png, .jpg, .jpeg"/>
+      </div>
+
+      <input type="submit" value="Cadastrar"/>
+    </form>
+
+    <h2>Filmes cadastrados</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Ano de lançamento</th>
+                <th>Sinopse</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aladdin</td>
+                <td>1992</td>
+                <td>Não tem o Keanu Reeves, e a versão da Broadway com o James Iglehart é melhor! E não se esqueça de jogar o jogo de SNES, uma verdadeira obra-prima.</td>
+                <!--Posteres com resolução 100 x 150px-->
+                <td><img src="./img/Aladdin.jpg" alt="Poster"></td>
+            </tr>
+            <tr>
+                <td>Frozen</td>
+                <td>2014</td>
+                <td>Melhor musical da década, mas a atriz Caroline Innerbichler é uma Anna bem melhor que a Kristen Bell!</td>
+                <td><img src="./img/Frozen.jpg" alt="Poster"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
