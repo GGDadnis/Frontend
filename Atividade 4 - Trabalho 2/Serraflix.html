@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR" nome="Serraflix 2.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compartilhamento de videos que não é do Paulo Coelho">
+    <meta name="keywords" content="não a pirataria, compartilhamento social, filmes, serraflix">
+    <title>Serraflix 2.0</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="container-fluid">
+
+    <h1>Cadastrar Filmes</h1> 
+
+    <div class="input-group mb-2">
+      <span class="input-group-text" id="basic-addon1">Filme</span>
+      <input type="text" class="form-control" placeholder="Matrix" aria-label="Nome do filme" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-2">
+      <span class="input-group-text" id="basic-addon1">Lançamento</span>
+      <input type="text" class="form-control" placeholder="1999" aria-label="Lançamento" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-2">
+      <span class="input-group-text">Sinopse</span>
+      <textarea class="form-control" placeholder="Tem o Keanu Reeves explodindo coisas..." aria-label="Sinopse"></textarea>
+    </div>
+    <div class="input-group mb-2">
+      <label class="input-group-text" for="inputGroupFile01">Capa do Filme</label>
+      <input type="file" class="form-control" id="inputGroupFile01" accept=".png, .jpg, .jpeg">
+   </div>
+
+    <button type="button" class="btn btn-primary mb-3">Cadastrar</button>
+  </div>
+    <h2>Filmes Cadastrados</h2>
+    
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Lançamento</th>
+                <th>Sinopse</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="align-middle text-center">Aladdin</td>
+                <td class="align-middle text-center">1992</td>
+                <td class="align-middle text-center">Não tem o Keanu Reeves, e a versão da Broadway com o James Iglehart é melhor! Também não se esqueça de jogar o jogo de SNES, uma verdadeira obra-prima.</td>
+                <!--Posteres com resolução 100 x 150px-->
+                <td class="align-middle"><img src="./img/Aladdin.jpg" alt="Poster"></td>
+            </tr>
+            <tr>
+                <td class="align-middle text-center">Frozen</td>
+                <td class="align-middle text-center">2014</td>
+                <td class="align-middle text-center">Melhor musical da década, mas a atriz Caroline Innerbichler é uma Anna bem melhor que a Kristen Bell!</td>
+                <td class="align-middle"><img src="./img/Frozen.jpg" alt="Poster"></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>
